@@ -63,6 +63,7 @@ def Main():
     try:
         gopigo3 = EasyGoPiGo3()
         distance_sensor = gopigo3.init_distance_sensor()
+        print("intialised objects succesfully")
 
     except IOError as msg:
         print("GoPiGo3 robot not detected or DistanceSensor not installed.")
